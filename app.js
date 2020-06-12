@@ -6,6 +6,10 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var thirteen_2_Router = require('./routes/thirteen_3');
+var thirteen_5_Router = require('./routes/thirteen_6');
+var openNginxPostRedirectRouter = require('./routes/openNginxPostRedirect');
+var nginxPostRedirectRouter = require('./routes/nginxPostRedirect');
 
 var app = express();
 
@@ -21,6 +25,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/thirteen_2', thirteen_2_Router);
+app.use('/thirteen_5', thirteen_5_Router);
+app.use('/openNginxPostRedirect', openNginxPostRedirectRouter);
+app.use('/nginxPostRedirect', nginxPostRedirectRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<style>
+    .w3-button {
+        width: 150px;
+    }
+</style>
+
+<body>
+    <div class="w3-container">
+        <p><button class="w3-button w3-yellow" onclick="thirteen_1()" style="width:300px">13 - Btn8 cloned as thirteen_1</button></p>
+        <p><button class="w3-button w3-cyan" onclick="fNginxPostRedirect()" style="width:300px">8 - Nginix Post Redirect</button></p>
+    </div>
+</body>
+
+<script>
+
+    function fNginxPostRedirect() {
+        alert("8-ENTER: index.html::fNginxPostRedirect()")
+        location.href='openNginxPostRedirect';
+    }
+
+    function thirteen_1() {
+        alert("13-ENTER: index.html::thirteen_1()")
+        location.href='thirteen_2';
+    }
+</script>
+
+</html>
